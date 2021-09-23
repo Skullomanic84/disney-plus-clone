@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
  import Detail from './Components/Detail';
+ import Login from './Components/Login';
+ 
 import { 
   BrowserRouter as Router, 
   Switch,
@@ -17,6 +19,9 @@ function App() {
     <Router>
       <Header />
       <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
 
         <Route path="/detail">
           <Detail />
